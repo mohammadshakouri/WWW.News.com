@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="News.App.Pages.MainMaster" %>
+
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="    https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="../Content/Css/StyleSheet.css" rel="stylesheet" />
+    <link href="../Content/Webfonts/style.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-5.2.0-dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header">
+            <span>سلام بر کاربر گرامی برای تماس با ما از شماره 09358885552 استفاده کنید</span>
+            <a class="btn btn-primary" href="#">ورود یا ثبت نام</a>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="Default.aspx">خانه</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">اخبار</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">بلاگ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">تماس با ما</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="../Content/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
